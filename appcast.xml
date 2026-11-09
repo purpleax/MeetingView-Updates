@@ -7,6 +7,16 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <description>Updates for MeetingView</description>
     <language>en</language>
     <item>
+      <title>Version 1.2.0</title>
+      <pubDate>Mon, 09 Nov 2026 13:30:20 GMT</pubDate>
+      <sparkle:version>14</sparkle:version>
+      <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+      <description>&lt;h3&gt;Added&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Free time in the menu bar: between meetings it shows "Free for 1h 20m" or "Free until 14:30" instead of the next meeting, which comes back 10 minutes before it starts. Choose the style, or turn it off, under Settings → Appearance → "Between meetings".&lt;/li&gt;&lt;li&gt;Overlapping and back-to-back meetings are marked in the menu, with the other meeting named when you hover.&lt;/li&gt;&lt;li&gt;Shortcuts and Siri actions: "Join Next Meeting", "Get Next Meeting" (title, times, link, service, calendar and location) and "Time Until Next Meeting". Ask Siri, for example, "What's my next meeting in MeetingView".&lt;/li&gt;&lt;li&gt;Run a Shortcut when a meeting starts or ends, for example to turn on a Focus, mute notifications or set your status. Pick them under Settings → Advanced → Shortcuts. The Shortcut receives the meeting's details.&lt;/li&gt;&lt;/ul&gt;</description>
+      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v1.2.0/MeetingView-1.2.0.dmg" length="9272906" type="application/octet-stream" sparkle:edSignature="gfx2BxtjW5Dzbiwn8qUHxs2Xi6OKnSNdQ9GOK9KamZIdZXIXJGDSWTLLZevJ234LMmISnFIVi3ZDKXZZThd4DA=="></enclosure>
+    </item>
+    <item>
       <title>Version 1.1.4</title>
       <pubDate>Mon, 09 Nov 2026 13:08:19 GMT</pubDate>
       <sparkle:version>13</sparkle:version>
@@ -62,6 +72,6 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: DX+8qDGPqCZUnBcP/MqUJcD6LCHsRbAGxPfQRkQ8dPOnuNxhW4fRq/oYTXIVb67213w/HePcMcPgQCGYlrCkAQ==
-length: 6545
+edSignature: vKEx/OcNG+YQetdjYEQ6D9sil/e7lVF46SnASqzDAP0OAAaZozqanOW5TsPT2RmSYTJSZDwRF4A9v3byqXgDDQ==
+length: 8090
 -->
