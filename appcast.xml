@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+  <channel>
+    <title>MeetingView</title>
+    <link>https://github.com/purpleax/MeetingView-Updates</link>
+    <description>Updates for MeetingView</description>
+    <language>en</language>
+    <item>
+      <title>Version 1.1.0</title>
+      <pubDate>Mon, 09 Nov 2026 10:57:33 GMT</pubDate>
+      <sparkle:version>7</sparkle:version>
+      <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+      <description>&lt;h3&gt;Added&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Automatic updates: MeetingView checks for new versions once a day and can download and install them for you. Updates are signed and notarized, and are verified before they're installed.&lt;/li&gt;&lt;li&gt;"Check for Updates…" in the menu, and an Updates section in Settings → General with the current version, when it last checked, and options to check and install automatically.&lt;/li&gt;&lt;/ul&gt;</description>
+      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v1.1.0/MeetingView-1.1.0.dmg" length="9128594" type="application/octet-stream" sparkle:edSignature="A6AmWFKQP3IJw6XADAvomHEdsHoMMM8nt9gBQnVAf2GEKPS2N3+nsgAbGWgkCRB/nhX863l1P3039vxKRHMPAQ==" />
+    </item>
+  </channel>
+</rss>
