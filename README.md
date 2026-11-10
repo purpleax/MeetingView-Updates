@@ -18,6 +18,7 @@ The **[User Manual](MANUAL.md)** covers everything MeetingView does, including:
 - [reminders](MANUAL.md#6-reminders-and-notifications)
 - [Shortcuts and Siri](MANUAL.md#10-shortcuts-and-siri)
 - [asking your calendar a question](MANUAL.md#16-ask-your-calendar)
+- [finding and blocking focus time](MANUAL.md#17-focus-time-and-working-hours)
 - [every setting](MANUAL.md#12-preferences-reference)
 - [troubleshooting](MANUAL.md#14-troubleshooting).
 

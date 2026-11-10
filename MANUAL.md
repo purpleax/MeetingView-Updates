@@ -20,6 +20,7 @@ MeetingView is a macOS menu-bar app that shows your current or next meeting and 
 14. [Troubleshooting](#14-troubleshooting)
 15. [Privacy](#15-privacy)
 16. [Ask your calendar](#16-ask-your-calendar)
+17. [Focus time and working hours](#17-focus-time-and-working-hours)
 
 ---
 
@@ -157,6 +158,13 @@ If something's wrong, a warning appears here with a button to fix it:
 ### Today and Tomorrow
 
 Your meetings for the day are listed with their start time (and end time, if you choose).
+
+On a day with two or more meetings, a **summary** sits under the day's heading, for example "4 meetings, 3h 30m in all. Busiest 10:00 – 13:00; 2 overlap at 14:00."
+
+- The first part counts the day's meetings and the time they take. Time when two meetings overlap is counted once. Declined, cancelled and all-day events are left out.
+- "Busiest" is the longest run of meetings with no real break between them.
+- A quiet day shows its longest free stretch instead, measured within your [working hours](#working-hours).
+- To hide the summary, turn off Preferences → Display & Events → **Show a summary of each day**.
 
 - **Click a meeting** to join it.
 - **Past meetings** are greyed out.
@@ -473,6 +481,7 @@ Hidden events are also ignored when MeetingView picks the next meeting, sends no
 | Setting | What it does |
 | --- | --- |
 | Show visual timeline of the day | The timeline at the top of the menu. |
+| Show a summary of each day | The line under Today and Tomorrow that sums up the day's meetings. |
 | Show event: end time | Shows end times as well as start times. |
 | Show event: icon | Shows each meeting's service icon. |
 | Show event: calendar color | Shows each meeting's calendar colour. |
@@ -482,6 +491,16 @@ Hidden events are also ignored when MeetingView picks the next meeting, sends no
 ### Notifications
 
 See [Reminders and notifications](#6-reminders-and-notifications).
+
+### Planning
+
+See [Focus time and working hours](#17-focus-time-and-working-hours).
+
+| Setting | What it does |
+| --- | --- |
+| Working Hours: Start, End, Days | The hours and days free time and focus slots are looked for in. Default 09:00 to 17:30, Monday to Friday. |
+| Add focus blocks to | The calendar a focus block is added to. "Default calendar" is the one your Mac uses for new events. |
+| Title | What a focus block is called. Default "Focus time". |
 
 ---
 
@@ -534,6 +553,7 @@ Read the diagnostics before sharing them: they can include calendar names.
 
 - MeetingView doesn't collect or send any personal data.
 - Your calendar data stays on your Mac. MeetingView reads it only to show your meetings and find their links.
+- MeetingView adds to your calendar only when you click **Block** on a focus slot. It never changes or removes any other event.
 - The only connection MeetingView makes is the daily update check to this repository, plus the meeting links you choose to open.
 
 ---
@@ -552,8 +572,10 @@ Questions it understands:
 | --- | --- |
 | "When am I free tomorrow afternoon?" | The free gaps in that part of the day. |
 | "Find me a two hour gap this week" | Gaps at least that long, day by day. |
+| "Find me two hours of focus time before Thursday" | Slots of that length you can [block in your calendar](#17-focus-time-and-working-hours). |
 | "Any free time today after 3?" | Gaps after that time. |
-| "What's on my calendar on Thursday?" | That day's meetings, with how many there are. |
+| "What's on my calendar on Thursday?" | That day's meetings, starting with a summary of the day. |
+| "How does my week look?" | The week's meetings, with how many, how long in all, and the busiest day. |
 | "What's my next meeting?" | The next meeting and how long until it starts. |
 | "Do I have anything with Sarah this week?" | Meetings with that person, or with those words in the title. |
 | "When is the budget planning meeting?" | That meeting, wherever it is in the next two weeks. |
@@ -565,9 +587,11 @@ A meeting you can join has a **Join** button beside it.
 
 - **How your question was understood** is shown under each answer, for example "Free time · Thu 12 Nov · after 14:00 · at least 2h". If that isn't what you meant, word the question differently.
 - **Two weeks ahead.** Ask looks from today to 14 days ahead, in the calendars you've selected.
-- **Free time** means weekdays from 09:00 to 17:30, or up to 22:00 if you ask about the evening. Gaps shorter than 15 minutes are left out, and so is time that has already passed. Meetings you've declined, cancelled meetings and all-day events don't count as busy.
+- **Free time** is looked for within your [working hours](#working-hours): weekdays from 09:00 to 17:30 unless you change them, or up to 22:00 if you ask about the evening. Gaps shorter than 15 minutes are left out, and so is time that has already passed.
+- **Busy** means any timed meeting in your calendars, including ones you've chosen to hide from the menu. Meetings you've declined, cancelled meetings and all-day events don't count as busy.
+- **"Before Thursday"** means every day from today up to Wednesday. "By" works the same way. "Until Thursday" includes Thursday.
 - **Calendar questions only.** For anything else, MeetingView says it can only answer questions about your meetings and free time.
-- **It can't change anything.** Ask only reads your calendar.
+- **It changes nothing unless you click Block.** Ask only reads your calendar. The one exception is a focus slot's **Block** button, which adds that slot as an event.
 - **English works best.** Other languages may work but haven't been tested.
 
 ### Privacy
@@ -584,7 +608,49 @@ The panel tells you why:
 
 ### From Shortcuts and Siri
 
-The **Ask Your Calendar** action takes a question and returns the answer as text. With Siri, say "Ask MeetingView about my calendar", then your question.
+The **Ask Your Calendar** action takes a question and returns the answer as text. With Siri, say "Ask MeetingView about my calendar", then your question. Focus slots are listed, but they can only be blocked from the panel.
+
+---
+
+## 17. Focus time and working hours
+
+### Finding and blocking focus time
+
+Open [Ask your calendar](#16-ask-your-calendar) and ask for focus time:
+
+- "Find me two hours of focus time before Thursday"
+- "I need an hour of deep work this afternoon"
+- "Block 90 minutes to focus on Friday"
+
+MeetingView lists slots of that length that are free of meetings and inside your working hours. If you don't give a length, slots are one hour. If you don't name a day, it looks over the next seven days. You get up to three slots a day and eight in all.
+
+Each slot has a **Block** button:
+
+1. Under the slots, MeetingView says what Block will do, for example "Block adds “Focus time” to the Work calendar."
+2. Click **Block**. The slot is added to that calendar as a busy event with no guests.
+3. The row shows "Added to Work" and an **Undo** button. Undo removes the event again.
+
+MeetingView adds an event only when you click Block. It never changes or removes any other event, and Undo is only offered while the panel is open; after that, delete the block in your calendar app.
+
+If the row shows "Couldn't add it", hover over it to see why, then click **Try Again**.
+
+### Working hours
+
+Preferences → **Planning** → Working Hours sets when free time and focus slots are looked for:
+
+- **Start** and **End**, in half-hour steps.
+- **Days**: click a day to include or leave it out. At least one day stays on.
+
+A question about a range, such as "this week", skips days you don't work. A question about one named day, such as "Am I free on Saturday?", is answered whichever day it is.
+
+### Where focus blocks go
+
+Preferences → **Planning** → Focus Blocks:
+
+- **Add focus blocks to**: "Default calendar" uses the calendar your Mac adds new events to (Calendar → Settings → General → Default Calendar). Or pick any calendar you can add events to.
+- **Title**: what each block is called. Leave it empty for "Focus time".
+
+The calendar you choose counts as busy even if you haven't selected it to show in MeetingView, so a slot you've blocked isn't offered again.
 
 ---
 
