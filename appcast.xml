@@ -33,85 +33,9 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
 &lt;ul&gt;&lt;li&gt;The Advanced tab in Preferences, and with it Shortcut hooks, AppleScript hooks and regex filters.&lt;/li&gt;&lt;/ul&gt;</description>
       <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v2.0.0/MeetingView-2.0.0.dmg" length="3039988" type="application/octet-stream" sparkle:edSignature="ToSisV4hzrFDQy4KTVM4QWu3LhCkErZdEc1XTpvm9TgTrko4/A3nzLxnQFLdgc1yetaIbTyl40V0hE9iYEKPAQ=="></enclosure>
     </item>
-    <item>
-      <title>Version 1.2.1</title>
-      <pubDate>Mon, 09 Nov 2026 21:12:46 GMT</pubDate>
-      <sparkle:version>16</sparkle:version>
-      <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description>&lt;h3&gt;Fixed&lt;/h3&gt;
-&lt;ul&gt;&lt;li&gt;Preferences → General shows its "Keyboard Shortcuts" heading again; 1.2.0 had renamed it "Shortcuts". In other languages, the new Shortcuts section in Advanced was headed "Keyboard Shortcuts"; it now reads "Shortcuts".&lt;/li&gt;&lt;/ul&gt;
-&lt;h3&gt;Documentation&lt;/h3&gt;
-&lt;ul&gt;&lt;li&gt;A full user manual is now available: https://github.com/purpleax/MeetingView-Updates/blob/main/MANUAL.md&lt;/li&gt;&lt;li&gt;Correction to the 1.2.0 notes: the "Between meetings" setting is in Preferences → Display &amp;amp; Events.&lt;/li&gt;&lt;/ul&gt;</description>
-      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v1.2.1/MeetingView-1.2.1.dmg" length="9292383" type="application/octet-stream" sparkle:edSignature="dfUyKir/EtXAsZxTSIqpeTqsvCMeMKRayRmD+2NWAj2hk7qOXb4sw227iceth3eM/1u39jl2aZwMQozHBalNAg=="></enclosure>
-    </item>
-    <item>
-      <title>Version 1.2.0</title>
-      <pubDate>Mon, 09 Nov 2026 13:30:20 GMT</pubDate>
-      <sparkle:version>14</sparkle:version>
-      <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description>&lt;h3&gt;Added&lt;/h3&gt;
-&lt;ul&gt;&lt;li&gt;Free time in the menu bar: between meetings it shows "Free for 1h 20m" or "Free until 14:30" instead of the next meeting, which comes back 10 minutes before it starts. Choose the style, or turn it off, under Settings → Appearance → "Between meetings".&lt;/li&gt;&lt;li&gt;Overlapping and back-to-back meetings are marked in the menu, with the other meeting named when you hover.&lt;/li&gt;&lt;li&gt;Shortcuts and Siri actions: "Join Next Meeting", "Get Next Meeting" (title, times, link, service, calendar and location) and "Time Until Next Meeting". Ask Siri, for example, "What's my next meeting in MeetingView".&lt;/li&gt;&lt;li&gt;Run a Shortcut when a meeting starts or ends, for example to turn on a Focus, mute notifications or set your status. Pick them under Settings → Advanced → Shortcuts. The Shortcut receives the meeting's details.&lt;/li&gt;&lt;/ul&gt;</description>
-      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v1.2.0/MeetingView-1.2.0.dmg" length="9272906" type="application/octet-stream" sparkle:edSignature="gfx2BxtjW5Dzbiwn8qUHxs2Xi6OKnSNdQ9GOK9KamZIdZXIXJGDSWTLLZevJ234LMmISnFIVi3ZDKXZZThd4DA=="></enclosure>
-    </item>
-    <item>
-      <title>Version 1.1.4</title>
-      <pubDate>Mon, 09 Nov 2026 13:08:19 GMT</pubDate>
-      <sparkle:version>13</sparkle:version>
-      <sparkle:shortVersionString>1.1.4</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description>&lt;h3&gt;Removed&lt;/h3&gt;
-&lt;ul&gt;&lt;li&gt;The "What's New" menu item and window. Release notes are still shown in the update window when a new version is available, and on each GitHub release.&lt;/li&gt;&lt;/ul&gt;</description>
-      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v1.1.4/MeetingView-1.1.4.dmg" length="9125846" type="application/octet-stream" sparkle:edSignature="zuSKaBdHgmBwGFiDKZCILbrWQlMqE9u4m6sod3q40yxSB4FzKhPHjfRRt3+XMcjO+vZATHcqOhcLaKuQtaWLAQ=="></enclosure>
-    </item>
-    <item>
-      <title>Version 1.1.3</title>
-      <pubDate>Mon, 09 Nov 2026 12:54:52 GMT</pubDate>
-      <sparkle:version>10</sparkle:version>
-      <sparkle:shortVersionString>1.1.3</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description>&lt;h3&gt;Changed&lt;/h3&gt;
-&lt;ul&gt;&lt;li&gt;Google Calendar is only offered when the build has a Google sign-in client. Releases don't have one yet, so they offer macOS Calendar only, which also shows Google calendars added to Calendar.app. Before, choosing Google Calendar ended in a "not configured" error.&lt;/li&gt;&lt;/ul&gt;
-&lt;h3&gt;Fixed&lt;/h3&gt;
-&lt;ul&gt;&lt;li&gt;Saving the Google session can no longer delete the saved one if the keychain write fails.&lt;/li&gt;&lt;li&gt;The signed-in Google account's email address is now read correctly.&lt;/li&gt;&lt;li&gt;Google sign-out sends the revoke request correctly encoded, and keychain failures are logged.&lt;/li&gt;&lt;/ul&gt;
-&lt;h3&gt;Security&lt;/h3&gt;
-&lt;ul&gt;&lt;li&gt;Google Calendar responses are no longer kept in an on-disk cache that outlived sign-out.&lt;/li&gt;&lt;/ul&gt;</description>
-      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v1.1.3/MeetingView-1.1.3.dmg" length="9138734" type="application/octet-stream" sparkle:edSignature="KQP6osolTpW5GRKcYdiLT6QXKwUhaB1DB3vI7Yxttk1qI/V3E5MUDlLlDx0KHKIzPgahadsdX20CX+90qTRyCg=="></enclosure>
-    </item>
-    <item>
-      <title>Version 1.1.2</title>
-      <pubDate>Mon, 09 Nov 2026 12:34:50 GMT</pubDate>
-      <sparkle:version>9</sparkle:version>
-      <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description>&lt;h3&gt;Security&lt;/h3&gt;
-&lt;ul&gt;&lt;li&gt;Links from calendar invites only open if they're web links or Zoom or Discord app links. An invite can no longer make MeetingView open a file share, a local file or another app's link, including through a Google redirect, the event's URL field or a broad custom regex.&lt;/li&gt;&lt;li&gt;Lookalike hosts such as &lt;code&gt;evilzoom.us&lt;/code&gt; or &lt;code&gt;meetXgoogle.com&lt;/code&gt; are no longer treated as Zoom or Google Meet, so they don't get a real service's icon, a Zoom app rewrite or your email address added to the link.&lt;/li&gt;&lt;li&gt;A custom browser set as a plain program only ever receives web links.&lt;/li&gt;&lt;li&gt;Very large or crafted invite descriptions can no longer stall the app: HTML handling and link detection now take time in proportion to the text, and only the first 64 KB of a description is scanned.&lt;/li&gt;&lt;li&gt;Updates: the update feed is now signed with the same key as the downloads, and MeetingView refuses a feed without a valid signature. Someone who could change the feed can no longer push an older version or hold back updates.&lt;/li&gt;&lt;/ul&gt;</description>
-      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v1.1.2/MeetingView-1.1.2.dmg" length="9132907" type="application/octet-stream" sparkle:edSignature="QtMJkMAjmCUYpbMkpYghpYlbJl55VeTtyamVpKpta6AmXTkZnyNH+S3JUOARkuJAjEkfReKs24u38fSE37j8Dg=="></enclosure>
-    </item>
-    <item>
-      <title>Version 1.1.1</title>
-      <pubDate>Mon, 09 Nov 2026 11:04:32 GMT</pubDate>
-      <sparkle:version>8</sparkle:version>
-      <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description>&lt;h3&gt;Fixed&lt;/h3&gt;
-&lt;ul&gt;&lt;li&gt;A routine update check that finds nothing new is no longer logged as an error.&lt;/li&gt;&lt;/ul&gt;</description>
-      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v1.1.1/MeetingView-1.1.1.dmg" length="9125012" type="application/octet-stream" sparkle:edSignature="oEhhp9bVJ4ypr8YbZE7ZCwZbl/I9KFLybES4o/uuRhVzMZOjzUL8QXOHi26HuwJ4wpk1iBLhqag4IIPBBKADCQ=="></enclosure>
-    </item>
-    <item>
-      <title>Version 1.1.0</title>
-      <pubDate>Mon, 09 Nov 2026 10:57:33 GMT</pubDate>
-      <sparkle:version>7</sparkle:version>
-      <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
-      <description>&lt;h3&gt;Added&lt;/h3&gt;
-&lt;ul&gt;&lt;li&gt;Automatic updates: MeetingView checks for new versions once a day and can download and install them for you. Updates are signed and notarized, and are verified before they're installed.&lt;/li&gt;&lt;li&gt;"Check for Updates…" in the menu, and an Updates section in Settings → General with the current version, when it last checked, and options to check and install automatically.&lt;/li&gt;&lt;/ul&gt;</description>
-      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v1.1.0/MeetingView-1.1.0.dmg" length="9128594" type="application/octet-stream" sparkle:edSignature="A6AmWFKQP3IJw6XADAvomHEdsHoMMM8nt9gBQnVAf2GEKPS2N3+nsgAbGWgkCRB/nhX863l1P3039vxKRHMPAQ=="></enclosure>
-    </item>
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: O3eObKO6oyY//0BkFAyMqM2kcnc5GtQUOb+7cmKgTxGQVHLTxxU+Ps/MrXJpwrJRIMnSPg5+JPCqlE7Yj7iHDQ==
-length: 12036
+edSignature: od/+Drpqs69OGx3ACGmmVQytU+ucphZediaJQAUln5Q+EgjKk7xzmDZ07OuieSGwE/BUivy7yIv+jRaa/jt3BQ==
+length: 3311
 -->
