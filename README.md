@@ -6,7 +6,7 @@ This repository holds signed, notarized builds of MeetingView and its update fee
 
 ## Download
 
-Download the latest disk image from [Releases](https://github.com/purpleax/MeetingView-Updates/releases/latest), open it and drag MeetingView to Applications. It needs macOS 12 or later. Installed copies check for updates once a day and update themselves.
+Download the latest disk image from [Releases](https://github.com/purpleax/MeetingView-Updates/releases/latest), open it and drag MeetingView to Applications. It needs macOS 14 or later. Installed copies check for updates once a day and update themselves.
 
 ## Documentation
 
@@ -17,7 +17,6 @@ The **[User Manual](MANUAL.md)** covers everything MeetingView does, including:
 - [joining meetings](MANUAL.md#5-joining-meetings)
 - [reminders](MANUAL.md#6-reminders-and-notifications)
 - [Shortcuts and Siri](MANUAL.md#10-shortcuts-and-siri)
-- [automation hooks](MANUAL.md#11-automation-hooks)
 - [every setting](MANUAL.md#12-preferences-reference)
 - [troubleshooting](MANUAL.md#14-troubleshooting).
 
@@ -25,4 +24,6 @@ What changed in each version is on the [Releases](https://github.com/purpleax/Me
 
 ## License
 
-MeetingView is licensed under the Apache License 2.0; the license text is included in each disk image.
+MeetingView 2.0 and later is © 2026 Guy Brown, all rights reserved. It updates itself with Sparkle, used under the MIT License; both notices are included in each disk image.
+
+The older 1.x releases were published under the Apache License 2.0, and their disk images carry that licence text.
