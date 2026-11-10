@@ -226,6 +226,7 @@ Turn on **Display & Events → Show event: details as submenu** to add a submenu
 - **Dismiss meeting** / **Remove dismissal** (see [Dismissing meetings](#7-dismissing-meetings))
 - **Email attendees**, which opens a new email to everyone invited
 - **Running late** (see [below](#running-late))
+- **Can't attend**, for a meeting that hasn't started (see [below](#cant-attend))
 - **Open in Maps**, for a meeting with a location and no meeting link. It opens directions from where you are
 - **Open in Calendar App**
 - **Open in Fantastical**, if you have it installed.
@@ -243,12 +244,26 @@ When a meeting's invitation is long, its details include **Prep, summarised on t
 
 #### Running late
 
-**Running late** → 5, 10 or 15 minutes opens a new email in your mail app, addressed and written: the meeting's title as the subject and your message as the text. Check it and press Send; MeetingView sends nothing itself. You'll find it in a meeting's details submenu, and under **More actions** for the current or next meeting.
+**Running late** → 5, 10 or 15 minutes opens a new email in your mail app, addressed and written, with the meeting's title as the subject. Check it and press Send; MeetingView sends nothing itself. You'll find it in a meeting's details submenu, and under **More actions** for the current or next meeting.
 
-- **Who gets it:** the organizer, or everyone invited. If you are the organizer, it goes to everyone else.
-- **What it says:** "I'm running about 10 minutes late." unless you write your own. Put `{minutes}` where the number should go.
-- Both are set in Preferences → Notifications → **Running Late Message**.
+- **Who gets it:** the organizer, or everyone invited (Preferences → Notifications → Messages → **Send “running late” to**). If you are the organizer, it goes to everyone else.
+- **What it says** depends on who it's for:
+  - one person: "Sorry, I'm running about 10 minutes late. See you shortly."
+  - a small group: "Sorry, I'm running about 10 minutes late. Please start without me and I'll catch up."
+  - a large meeting: "I'm running about 10 minutes late for Quarterly all-hands. Please start without me."
+- **Your own wording:** write it in Preferences → Notifications → Messages → **Your own “running late” message**, with `{minutes}` where the number should go. It is then used every time, exactly as written.
 - The item is missing when the meeting is over or nobody else in it has an email address.
+
+#### Can't attend
+
+For a meeting that hasn't started, **Can't attend** opens an email to the organizer:
+
+- **Send apologies** says you can't make it: "Apologies, I can't make Design review on Thu 12 Nov at 14:00. Please go ahead without me."
+- **Ask to move it** says the same and offers two times when you are free: "…Could we move it? I'm free Thu 12 Nov 15:00 – 16:00 or Fri 13 Nov 10:00 – 11:00."
+  - The times are the meeting's own length, inside your [working hours](#working-hours), on two different days in the next five, and at least an hour away.
+  - If you have no free time, the message asks for another time without offering one.
+
+As with Running late, check the email and press Send. MeetingView doesn't change your reply to the invitation in your calendar: decline it there as well if you need to.
 
 ### Actions
 
@@ -586,7 +601,7 @@ See [Reminders and notifications](#6-reminders-and-notifications).
 | --- | --- |
 | Send a summary of the day's meetings, Send it at | The [morning summary](#morning-summary) and its time. Off by default. |
 | Remind me when it's time to leave for in-person meetings, I travel by, With no travel time, remind me | [Leave-by reminders](#leave-by-reminders). Off by default. |
-| Running Late Message: Send it to, Message | Who the [running-late email](#running-late) goes to, and its wording. |
+| Messages: Send “running late” to, Your own “running late” message | Who the [running-late email](#running-late) goes to, and your own wording for it if you want one. |
 
 ### Planning
 
