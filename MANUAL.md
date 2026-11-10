@@ -93,7 +93,7 @@ MeetingView's menu-bar item shows your next meeting, or the one you're in, for e
 | A meeting is coming up | Its title and the time until it starts, e.g. "Standup in 12m". |
 | A meeting is in progress | Its title and the time left, e.g. "Standup now (8m left)". |
 | Between meetings, with time to spare | Your free time, e.g. "Free for 1h 20m" or "Free until 14:30" (see below). |
-| No more meetings | Just the icon. |
+| No more meetings | Just the MeetingView icon, in the colour you chose for the app icon. (A calendar icon instead, if the Icon setting is "Calendar".) |
 | Something needs attention | A warning, for example when calendar access is missing. |
 
 You can change the icon, title and time under [Display & Events](#display--events).
