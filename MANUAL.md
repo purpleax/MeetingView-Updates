@@ -19,6 +19,7 @@ MeetingView is a macOS menu-bar app that shows your current or next meeting and 
 13. [Supported meeting services](#13-supported-meeting-services)
 14. [Troubleshooting](#14-troubleshooting)
 15. [Privacy](#15-privacy)
+16. [Ask your calendar](#16-ask-your-calendar)
 
 ---
 
@@ -26,7 +27,8 @@ MeetingView is a macOS menu-bar app that shows your current or next meeting and 
 
 ### Requirements
 
-- macOS 14 Sonoma or later.
+- macOS 26 or later (MeetingView 2.0 to 2.2 ran on macOS 14).
+- [Ask your calendar](#16-ask-your-calendar) also needs a Mac that supports Apple Intelligence, with it turned on. Everything else works without it.
 
 ### Install
 
@@ -357,6 +359,7 @@ Set global keyboard shortcuts in **Preferences → General → Keyboard Shortcut
 | Create meeting | Starts a new meeting. |
 | Join meeting from clipboard | Joins a meeting link you've copied. |
 | Toggle title visibility in status bar | Hides or shows the meeting title in the menu bar. |
+| Ask your calendar | Opens [Ask](#16-ask-your-calendar). |
 
 These work from any app.
 
@@ -375,6 +378,7 @@ Search for **MeetingView** in the Shortcuts app's action list.
 | **Time Until Next Meeting** | The number of minutes until your next meeting starts, as a number. Meetings already in progress are skipped. |
 | **Get Nearest Event Details** | One detail of the nearest meeting, as text: Title, Start Date, End Date, Meeting Link, Meeting Service, Calendar, URL, Notes, Location or Attendees. |
 | **Dismiss Nearest Meeting** | Dismisses the nearest meeting. |
+| **Ask Your Calendar** | The answer to a question about your meetings or free time, as text. See [Ask your calendar](#16-ask-your-calendar). |
 
 "Next meeting" means the next timed meeting that you haven't declined or dismissed, and that isn't canceled.
 
@@ -531,6 +535,56 @@ Read the diagnostics before sharing them: they can include calendar names.
 - MeetingView doesn't collect or send any personal data.
 - Your calendar data stays on your Mac. MeetingView reads it only to show your meetings and find their links.
 - The only connection MeetingView makes is the daily update check to this repository, plus the meeting links you choose to open.
+
+---
+
+## 16. Ask your calendar
+
+Ask MeetingView a question in plain language and it answers from your calendar.
+
+### Asking
+
+Choose **Ask Your Calendar…** in the menu, or press the keyboard shortcut if you've set one (Preferences → General → Keyboard Shortcuts). Type a question and press Return. Press Esc, or click anywhere else, to close the panel.
+
+Questions it understands:
+
+| You ask | You get |
+| --- | --- |
+| "When am I free tomorrow afternoon?" | The free gaps in that part of the day. |
+| "Find me a two hour gap this week" | Gaps at least that long, day by day. |
+| "Any free time today after 3?" | Gaps after that time. |
+| "What's on my calendar on Thursday?" | That day's meetings, with how many there are. |
+| "What's my next meeting?" | The next meeting and how long until it starts. |
+| "Do I have anything with Sarah this week?" | Meetings with that person, or with those words in the title. |
+| "When is the budget planning meeting?" | That meeting, wherever it is in the next two weeks. |
+| "Am I double booked this week?" | Meetings that overlap. |
+
+A meeting you can join has a **Join** button beside it.
+
+### What to know
+
+- **How your question was understood** is shown under each answer, for example "Free time · Thu 12 Nov · after 14:00 · at least 2h". If that isn't what you meant, word the question differently.
+- **Two weeks ahead.** Ask looks from today to 14 days ahead, in the calendars you've selected.
+- **Free time** means weekdays from 09:00 to 17:30, or up to 22:00 if you ask about the evening. Gaps shorter than 15 minutes are left out, and so is time that has already passed. Meetings you've declined, cancelled meetings and all-day events don't count as busy.
+- **Calendar questions only.** For anything else, MeetingView says it can only answer questions about your meetings and free time.
+- **It can't change anything.** Ask only reads your calendar.
+- **English works best.** Other languages may work but haven't been tested.
+
+### Privacy
+
+Ask uses Apple Intelligence on your Mac. Your question is read by Apple's on-device model, which never sees your calendar; MeetingView then looks up the answer itself. Nothing is sent anywhere, and your questions aren't saved or logged.
+
+### If Ask isn't available
+
+The panel tells you why:
+
+- **Apple Intelligence is turned off:** turn it on in System Settings → Apple Intelligence & Siri.
+- **Apple Intelligence is still getting ready:** macOS is downloading its model. Try again later.
+- **This Mac doesn't support Apple Intelligence:** Ask can't run on it. The rest of MeetingView works as usual.
+
+### From Shortcuts and Siri
+
+The **Ask Your Calendar** action takes a question and returns the answer as text. With Siri, say "Ask MeetingView about my calendar", then your question.
 
 ---
 
