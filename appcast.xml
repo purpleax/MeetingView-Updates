@@ -7,6 +7,16 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <description>Updates for MeetingView</description>
     <language>en</language>
     <item>
+      <title>Version 2.2.1</title>
+      <pubDate>Tue, 10 Nov 2026 10:56:20 GMT</pubDate>
+      <sparkle:version>113</sparkle:version>
+      <sparkle:shortVersionString>2.2.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description>&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;When there is no meeting to show, the menu bar now shows the MeetingView icon in your chosen colour instead of a grey calendar. To keep the calendar icon, set Preferences → Display &amp;amp; Events → Icon to "Calendar".&lt;/li&gt;&lt;/ul&gt;</description>
+      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v2.2.1/MeetingView-2.2.1.dmg" length="2926172" type="application/octet-stream" sparkle:edSignature="OMr1xoolo1YZrjfAwJlvm0HGqusB095Ir3vIvy2LUKhISgWMD0ZN3EawmgpUo0CzNaTDWvGD6NZqzRDMSvnaDA=="></enclosure>
+    </item>
+    <item>
       <title>Version 2.2.0</title>
       <pubDate>Tue, 10 Nov 2026 10:48:31 GMT</pubDate>
       <sparkle:version>112</sparkle:version>
@@ -46,6 +56,6 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: rPMdZnjby/uDjph9dd4tJ0SqPGrZaimBn/ggw8zEfLPeFNu0dtDO9ftxDB+N+90hgRnAeSEcUjbAQADCNoW+BQ==
-length: 4319
+edSignature: rlA4fneSZrygGpxoVaimTiPPzwociIHQ7Czv2jIpucyjnC86z/jhFkachFFGXfL9TKVDg/5tNnyico7kzvXjBw==
+length: 5237
 -->
