@@ -204,6 +204,7 @@ Turn on **Display & Events → Show event: details as submenu** to add a submenu
 - **Dismiss meeting** / **Remove dismissal** (see [Dismissing meetings](#7-dismissing-meetings))
 - **Email attendees**, which opens a new email to everyone invited
 - **Running late** (see [below](#running-late))
+- **Open in Maps**, for a meeting with a location and no meeting link. It opens directions from where you are
 - **Open in Calendar App**
 - **Open in Fantastical**, if you have it installed.
 
@@ -319,6 +320,20 @@ Turn on Preferences → Notifications → **Send a summary of the day's meetings
 - If your Mac is asleep or locked then, the summary arrives when you next unlock it, up to four hours later. After that it is skipped for the day.
 - A day with no meetings gets no summary.
 - If the menu bar hides meeting titles, the summary hides them too.
+
+### Leave-by reminders
+
+For a meeting you travel to (one with a location and no meeting link), MeetingView can tell you when it's time to leave: "Time to leave for Site visit. Leave by 13:30 to arrive for 14:00. About 25m by car."
+
+Turn on Preferences → Notifications → **Remind me when it's time to leave for in-person meetings**. The first time, macOS asks whether MeetingView may use your location.
+
+- **I travel by:** car (the default), on foot or public transport.
+- **When it arrives:** MeetingView allows five minutes at the other end, and reminds you five minutes before you need to set off.
+- **Without a travel time** the reminder comes a fixed time before the start instead: 15 minutes unless you change **With no travel time, remind me**. This happens when location access is off, or when Maps can't find the place (a room name, for example) or a route.
+- If you're already there, there's no reminder.
+- Meetings you've declined or dismissed, and canceled meetings, are skipped.
+
+**What is sent:** to get the travel time, MeetingView sends the meeting's location and your Mac's location to Apple Maps. Nothing else about the meeting is sent, and nothing is sent while the setting is off. To stop using your location but keep the reminders, turn MeetingView off in System Settings → Privacy & Security → Location Services.
 
 ### Automatic Joining
 
@@ -532,6 +547,7 @@ See [Reminders and notifications](#6-reminders-and-notifications).
 | Setting | What it does |
 | --- | --- |
 | Send a summary of the day's meetings, Send it at | The [morning summary](#morning-summary) and its time. Off by default. |
+| Remind me when it's time to leave for in-person meetings, I travel by, With no travel time, remind me | [Leave-by reminders](#leave-by-reminders). Off by default. |
 | Running Late Message: Send it to, Message | Who the [running-late email](#running-late) goes to, and its wording. |
 
 ### Planning
@@ -597,6 +613,7 @@ Read the diagnostics before sharing them: they can include calendar names.
 - Your calendar data stays on your Mac. MeetingView reads it only to show your meetings and find their links.
 - MeetingView adds to your calendar only when you click **Block** on a focus slot. It never changes or removes any other event.
 - The only connection MeetingView makes is the daily update check to this repository, plus the meeting links you choose to open.
+- One exception, off unless you turn it on: [leave-by reminders](#leave-by-reminders) send a meeting's location and your Mac's location to Apple Maps to get a travel time.
 
 ---
 
