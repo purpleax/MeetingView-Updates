@@ -7,6 +7,18 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <description>Updates for MeetingView</description>
     <language>en</language>
     <item>
+      <title>Version 2.7.0</title>
+      <pubDate>Tue, 10 Nov 2026 21:55:18 GMT</pubDate>
+      <sparkle:version>122</sparkle:version>
+      <sparkle:shortVersionString>2.7.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description>&lt;h3&gt;Added&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;A widget&lt;/strong&gt; for the desktop and Notification Centre, in three sizes. Small shows your current or next meeting; medium shows three meetings and large shows seven, each with a &lt;strong&gt;Join&lt;/strong&gt; button. To add it, right-click the desktop, choose Edit Widgets and search for MeetingView.&lt;/li&gt;&lt;li&gt;The widget follows the same choices as the menu: your calendars, your event filters, dismissed meetings, and hidden titles.&lt;/li&gt;&lt;li&gt;MeetingView has to be running for the widget to stay up to date. If it hasn't run for a day, the widget asks you to open it.&lt;/li&gt;&lt;/ul&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Releases are now checked to start correctly after notarization, before they are published.&lt;/li&gt;&lt;/ul&gt;</description>
+      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v2.7.0/MeetingView-2.7.0.dmg" length="4224176" type="application/octet-stream" sparkle:edSignature="zQzRrPUlk7jmk+fZuwtBO6IdcfLesF0F9LmnZTK2vmsDESrBpyb+VDIATzAa8ZXe2qVU/nzLo3+FZBJw2SxsDw=="></enclosure>
+    </item>
+    <item>
       <title>Version 2.6.0</title>
       <pubDate>Tue, 10 Nov 2026 21:38:09 GMT</pubDate>
       <sparkle:version>121</sparkle:version>
@@ -102,6 +114,6 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: Qdw0lm6G8S9PJgARzrkmNEECN8P3eTSlhE78EHI1+KNFA5Is5ir8Gjkk3OIeZkwE6b3JOvZ1b4bIhUc7LBZNCg==
-length: 13253
+edSignature: OIcFVEif19V1U2kKyJw4NpDvJEM+0A0fz04++L0mZqtGpCdnMUfiT3XtwJN2qxEA8UWhP2R0gxMCfyFgvHzeCA==
+length: 14722
 -->
