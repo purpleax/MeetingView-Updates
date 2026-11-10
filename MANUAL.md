@@ -200,6 +200,7 @@ Turn on **Display & Events → Show event: details as submenu** to add a submenu
 - title, status (Accepted, Declined, Tentative or Pending), time and duration, and calendar
 - location, organizer, notes, and attendees with their responses
 - **Documents**: what the invitation links to, such as Google Docs, Sheets, Slides and Drive, Notion, Figma, Confluence, Dropbox, Miro and Microsoft 365 files, and any other web page (shown by its site). Click one to open it in your browser; hover to see the full address. The meeting link itself isn't repeated here, and up to eight are listed
+- **Prep**, for a meeting with a long invitation (see [below](#meeting-prep))
 - **Copy meeting link**
 - **Join with other link**, when the invite has more than one meeting link
 - **Dismiss meeting** / **Remove dismissal** (see [Dismissing meetings](#7-dismissing-meetings))
@@ -208,6 +209,17 @@ Turn on **Display & Events → Show event: details as submenu** to add a submenu
 - **Open in Maps**, for a meeting with a location and no meeting link. It opens directions from where you are
 - **Open in Calendar App**
 - **Open in Fantastical**, if you have it installed.
+
+#### Meeting prep
+
+When a meeting's invitation is long, its details include **Prep, summarised on this Mac**: a short list of the **Agenda**, and what you're asked to bring, read or do **Before the meeting**.
+
+- The summary is made when you open the details, and takes a second or two the first time. After that it appears at once.
+- It is made on your Mac with Apple Intelligence. The invitation isn't sent anywhere.
+- MeetingView checks every line against the invitation and leaves out anything its text doesn't support, including any number or time the invitation doesn't contain. If nothing is left, it says no agenda or preparation was found.
+- It is a summary, not a replacement: the full notes are still shown above it.
+- It appears only for invitations of a few paragraphs or more, and only on a Mac with Apple Intelligence turned on.
+- To turn it off, use Preferences → Display & Events → Menu → **Summarise long invitations in the details**.
 
 #### Running late
 
@@ -541,6 +553,7 @@ Hidden events are also ignored when MeetingView picks the next meeting, sends no
 | Show event: icon | Shows each meeting's service icon. |
 | Show event: calendar color | Shows each meeting's calendar colour. |
 | Show event: details as submenu | Adds the [details submenu](#event-details) to each meeting. |
+| Summarise long invitations in the details | Adds [meeting prep](#meeting-prep) to the details. Needs Apple Intelligence. On by default. |
 | Shorten event title to | Limits titles in the menu to 20–100 characters. |
 
 ### Notifications
