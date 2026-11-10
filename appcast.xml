@@ -7,6 +7,16 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <description>Updates for MeetingView</description>
     <language>en</language>
     <item>
+      <title>Version 2.9.0</title>
+      <pubDate>Tue, 10 Nov 2026 22:34:11 GMT</pubDate>
+      <sparkle:version>125</sparkle:version>
+      <sparkle:shortVersionString>2.9.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description>&lt;h3&gt;Added&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Overload warnings.&lt;/strong&gt; A day with no half-hour free over lunch (11:30 to 14:00), or with three hours of meetings in a row, now shows a warning under its summary in the menu. It also names the meeting still to come that looks most optional, and why: it's a hold, you're an optional guest, you haven't accepted it, or ten or more people are invited. The warning is added to the morning summary too.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Holds.&lt;/strong&gt; A block that only reserves time, such as "Hold", "Placeholder" or "Keep free", is labelled Hold in the menu. A hold doesn't count towards an overloaded day.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Call.&lt;/strong&gt; When an invitation has no meeting link but gives a phone number, the meeting's actions include Call, which dials the number and then enters the passcode or PIN if the invitation gives one.&lt;/li&gt;&lt;li&gt;For blocks and dial-in details that are worded unusually, MeetingView asks Apple Intelligence on your Mac, and uses its answer only if the event's own text bears it out. Everything else here works without Apple Intelligence.&lt;/li&gt;&lt;li&gt;Both can be turned off in Preferences → Display &amp;amp; Events → Menu.&lt;/li&gt;&lt;/ul&gt;</description>
+      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v2.9.0/MeetingView-2.9.0.dmg" length="4391950" type="application/octet-stream" sparkle:edSignature="b+njt0vkTd2ksEfWmiLHAJBkT7rck+5KkHt0MNv6zLRSZtU+djXOoHPT29rTVT2YxszLdEhpcWmZQJg0LSDFBQ=="></enclosure>
+    </item>
+    <item>
       <title>Version 2.8.0</title>
       <pubDate>Tue, 10 Nov 2026 22:18:27 GMT</pubDate>
       <sparkle:version>124</sparkle:version>
@@ -124,6 +134,6 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: SwxtQ7txtth71wbM6dg3G45LWHmk8d9Fi2fO3Le7fCof7vAnJA+03KjfF2QTiVayWRGBPKRVqp0Zg5vF23+XAA==
-length: 16128
+edSignature: yRhYqR5dXKLVSGulSwpeEMPTauxikumxoabaZd1uy8IfKaoeRNVEVUAcHW89uhGhcCCHVNO5qm6RRNBR4oAVCg==
+length: 18041
 -->
