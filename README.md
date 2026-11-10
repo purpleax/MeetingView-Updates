@@ -20,6 +20,7 @@ The **[User Manual](MANUAL.md)** covers everything MeetingView does, including:
 - [asking your calendar a question](MANUAL.md#16-ask-your-calendar)
 - [finding and blocking focus time](MANUAL.md#17-focus-time-and-working-hours)
 - [Focus filters](MANUAL.md#18-focus-filters)
+- [the desktop widget](MANUAL.md#19-the-widget)
 - [every setting](MANUAL.md#12-preferences-reference)
 - [troubleshooting](MANUAL.md#14-troubleshooting).
 

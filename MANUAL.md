@@ -22,6 +22,7 @@ MeetingView is a macOS menu-bar app that shows your current or next meeting and 
 16. [Ask your calendar](#16-ask-your-calendar)
 17. [Focus time and working hours](#17-focus-time-and-working-hours)
 18. [Focus filters](#18-focus-filters)
+19. [The widget](#19-the-widget)
 
 ---
 
@@ -464,6 +465,8 @@ MeetingView's actions can also show up in Spotlight.
 
 `meetingview://preferences` opens MeetingView's Preferences, for example from a script or a link.
 
+The widget's Join buttons use `meetingview://join?id=…`. It joins a meeting MeetingView is already showing, and can't open anything else.
+
 ---
 
 ## 12. Preferences reference
@@ -729,6 +732,36 @@ While the Focus is on:
 - Your selection in Preferences → Calendars isn't changed, and is used again as soon as the Focus ends.
 
 Preferences → Calendars → **Focus Filters** has a button that opens Focus settings.
+
+---
+
+## 19. The widget
+
+MeetingView has a widget for the desktop and Notification Centre.
+
+### Adding it
+
+1. Right-click the desktop and choose **Edit Widgets** (or click the date in the menu bar and choose **Edit Widgets** at the bottom).
+2. Search for **MeetingView**.
+3. Pick a size and drag it to the desktop or into Notification Centre.
+
+### What it shows
+
+| Size | Shows |
+| --- | --- |
+| Small | Your current or next meeting: its title, its times, and "Now" or a countdown. Click anywhere on it to join. |
+| Medium | Up to three meetings, each with a **Join** button. |
+| Large | Up to seven meetings, each with a **Join** button, with a heading for tomorrow's. |
+
+The widget lists the same meetings as the menu. It follows your calendars, your [Display & Events](#display--events) settings and any [Focus filter](#18-focus-filters). All-day events, meetings that have ended and meetings you've [dismissed](#7-dismissing-meetings) are left out. If you hide meeting titles in the menu bar, the widget shows "Meeting" instead.
+
+**Join** appears on meetings that have a meeting link, and opens it the way the menu does.
+
+### Good to know
+
+- **MeetingView has to be running.** The widget shows what MeetingView last worked out; it doesn't read your calendar itself. Turn on **Launch after login** in Preferences → General so it always is.
+- If MeetingView hasn't run for about a day, the widget says "Open MeetingView to see your meetings".
+- macOS may ask you to click a desktop widget once to bring it forward before its buttons respond.
 
 ---
 
