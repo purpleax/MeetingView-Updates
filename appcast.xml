@@ -7,6 +7,21 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <description>Updates for MeetingView</description>
     <language>en</language>
     <item>
+      <title>Version 2.0.0</title>
+      <pubDate>Tue, 10 Nov 2026 09:06:22 GMT</pubDate>
+      <sparkle:version>110</sparkle:version>
+      <sparkle:shortVersionString>2.0.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description>&lt;p&gt;MeetingView 2.0 is a complete rebuild. It does the same job, with the same settings, on a new foundation.&lt;/p&gt;
+&lt;h3&gt;Added&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Right-click the menu-bar item to join the current or next meeting straight away.&lt;/li&gt;&lt;li&gt;The menu has a join item for the current or next meeting at the top.&lt;/li&gt;&lt;li&gt;A long meeting title that doesn't fit in the menu bar now falls back to the icon alone, so the item never disappears.&lt;/li&gt;&lt;/ul&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;MeetingView now requires macOS 14 or later.&lt;/li&gt;&lt;li&gt;The app's language is chosen in System Settings → General → Language &amp;amp; Region → Applications. Preferences → General has a button that opens it. A language picked in 1.x carries over.&lt;/li&gt;&lt;/ul&gt;
+&lt;h3&gt;Removed&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;The Advanced tab in Preferences, and with it Shortcut hooks, AppleScript hooks and regex filters.&lt;/li&gt;&lt;/ul&gt;</description>
+      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v2.0.0/MeetingView-2.0.0.dmg" length="3039988" type="application/octet-stream" sparkle:edSignature="ToSisV4hzrFDQy4KTVM4QWu3LhCkErZdEc1XTpvm9TgTrko4/A3nzLxnQFLdgc1yetaIbTyl40V0hE9iYEKPAQ=="></enclosure>
+    </item>
+    <item>
       <title>Version 1.2.1</title>
       <pubDate>Mon, 09 Nov 2026 21:12:46 GMT</pubDate>
       <sparkle:version>16</sparkle:version>
@@ -83,7 +98,8 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
       <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v1.1.0/MeetingView-1.1.0.dmg" length="9128594" type="application/octet-stream" sparkle:edSignature="A6AmWFKQP3IJw6XADAvomHEdsHoMMM8nt9gBQnVAf2GEKPS2N3+nsgAbGWgkCRB/nhX863l1P3039vxKRHMPAQ=="></enclosure>
     </item>
   </channel>
-</rss><!-- sparkle-signatures:
-edSignature: f/Tvivt5Feq+wv32nH16G8qGjU+mBPWPBQetENhgXzV2u38c5lQQRREN2/cQR17nnGA5TfErm9QbOEqTkylgDg==
-length: 9314
+</rss>
+<!-- sparkle-signatures:
+edSignature: k3BThUn6lVKYew8nH+d6KMysJvJhUet7a7+5ipHgWPjlaI0Hx6NOcy0b+r0lhbGUKWR6H4yaxk/I+l6NRnnXCw==
+length: 10943
 -->
