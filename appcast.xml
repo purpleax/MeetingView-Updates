@@ -7,6 +7,18 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <description>Updates for MeetingView</description>
     <language>en</language>
     <item>
+      <title>Version 2.6.0</title>
+      <pubDate>Tue, 10 Nov 2026 21:38:09 GMT</pubDate>
+      <sparkle:version>121</sparkle:version>
+      <sparkle:shortVersionString>2.6.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description>&lt;h3&gt;Added&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Leave-by reminders.&lt;/strong&gt; For a meeting with a location and no meeting link, MeetingView can tell you when it's time to leave, using the travel time from where you are: "Leave by 13:30 to arrive for 14:00. About 25m by car." Turn it on in Preferences → Notifications → Leave-by Reminders, and choose car (the default), on foot or public transport.&lt;/li&gt;&lt;li&gt;The reminder needs location access, which MeetingView asks for when you turn it on. Without it, or when Maps can't find the place, the reminder comes a fixed time before the start (15 minutes unless you change it).&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Open in Maps&lt;/strong&gt; in the actions of a meeting that has a location and no meeting link. It opens directions from where you are.&lt;/li&gt;&lt;/ul&gt;
+&lt;h3&gt;Privacy&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Leave-by reminders are off by default. While they are on, MeetingView sends the meeting's location and your Mac's location to Apple Maps to get the travel time. Nothing else about the meeting is sent.&lt;/li&gt;&lt;/ul&gt;</description>
+      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v2.6.0/MeetingView-2.6.0.dmg" length="3401870" type="application/octet-stream" sparkle:edSignature="7bNTQVcM7DK0s+zEJb3j8Xrq/s0mMU9K0t05z2aT92OI7OSj6/wOZF1KZN8/IVb64J6PcamdR1C713TSRcewBg=="></enclosure>
+    </item>
+    <item>
       <title>Version 2.5.0</title>
       <pubDate>Tue, 10 Nov 2026 21:22:28 GMT</pubDate>
       <sparkle:version>120</sparkle:version>
@@ -90,6 +102,6 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: GeUiVRvnAgXt1RHb8ZlTwPq4ym87f1vQxRDDkoZnJMl26mrOIsMaTBlApOSYdO6O5kRoXKQSIeA1M4Dz/hj7Bg==
-length: 11508
+edSignature: Qdw0lm6G8S9PJgARzrkmNEECN8P3eTSlhE78EHI1+KNFA5Is5ir8Gjkk3OIeZkwE6b3JOvZ1b4bIhUc7LBZNCg==
+length: 13253
 -->
