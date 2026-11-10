@@ -7,6 +7,18 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <description>Updates for MeetingView</description>
     <language>en</language>
     <item>
+      <title>Version 2.3.0</title>
+      <pubDate>Tue, 10 Nov 2026 12:03:05 GMT</pubDate>
+      <sparkle:version>116</sparkle:version>
+      <sparkle:shortVersionString>2.3.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description>&lt;h3&gt;Added&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Ask your calendar.&lt;/strong&gt; Choose Ask Your Calendar… in the menu and type a question in plain language, such as "When am I free tomorrow afternoon?", "What's on Thursday?", "Anything with Sarah this week?" or "Find me a two hour gap this week". MeetingView answers from your calendar, up to two weeks ahead, with a Join button on meetings you can join.&lt;/li&gt;&lt;li&gt;Ask runs on your Mac with Apple Intelligence. Your calendar and your questions never leave it.&lt;/li&gt;&lt;li&gt;Each answer shows how your question was understood, so you can see when it was misread.&lt;/li&gt;&lt;li&gt;A keyboard shortcut for Ask (Preferences → General → Keyboard Shortcuts) and an "Ask Your Calendar" action for Shortcuts and Siri.&lt;/li&gt;&lt;/ul&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;MeetingView now requires macOS 26 or later. Ask also needs a Mac that supports Apple Intelligence, with it turned on; the rest of the app works without it.&lt;/li&gt;&lt;/ul&gt;</description>
+      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v2.3.0/MeetingView-2.3.0.dmg" length="3121467" type="application/octet-stream" sparkle:edSignature="54wdyS7+01vmtxfEEOUS/hpU2v4epJ0LRDaEUa4xn1YKMFQLMYI3xxoIC2/D7JOeSxzXmlQvUb6/27YOgvLVDg=="></enclosure>
+    </item>
+    <item>
       <title>Version 2.2.1</title>
       <pubDate>Tue, 10 Nov 2026 10:56:20 GMT</pubDate>
       <sparkle:version>113</sparkle:version>
@@ -56,6 +68,6 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: rlA4fneSZrygGpxoVaimTiPPzwociIHQ7Czv2jIpucyjnC86z/jhFkachFFGXfL9TKVDg/5tNnyico7kzvXjBw==
-length: 5237
+edSignature: JE+ArUeQNjIXSKGYNDNV69JOACnbk17ZBn5oSLJxjbMpdxLKZiq8up0yZa385ug4YsnpriYkGL48WiZYT8HuCA==
+length: 6910
 -->
