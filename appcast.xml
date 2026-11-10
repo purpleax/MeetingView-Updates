@@ -7,6 +7,16 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <description>Updates for MeetingView</description>
     <language>en</language>
     <item>
+      <title>Version 2.8.0</title>
+      <pubDate>Tue, 10 Nov 2026 22:18:27 GMT</pubDate>
+      <sparkle:version>124</sparkle:version>
+      <sparkle:shortVersionString>2.8.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description>&lt;h3&gt;Added&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Meeting prep.&lt;/strong&gt; When a meeting has a long invitation, its details now include a short summary: the agenda, and what you're asked to bring, read or do beforehand. It is made when you open the details, on your Mac, with Apple Intelligence.&lt;/li&gt;&lt;li&gt;Every line of the summary is checked against the invitation. A line that isn't supported by its text, or that contains a number the invitation doesn't, is left out.&lt;/li&gt;&lt;li&gt;This needs "Show event: details as submenu" turned on (Preferences → Display &amp;amp; Events → Menu), and a Mac with Apple Intelligence turned on. To turn the summary off, use "Summarise long invitations in the details" in the same place.&lt;/li&gt;&lt;/ul&gt;</description>
+      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v2.8.0/MeetingView-2.8.0.dmg" length="4275473" type="application/octet-stream" sparkle:edSignature="1qq0d85WURIoCnR/yy3g5JkTzW8GUSsmL3pRmG8Dk+BhTwWhu+t7E7xZBa5YXmZtUZvAqiN5NFXjI5oWxwhbCQ=="></enclosure>
+    </item>
+    <item>
       <title>Version 2.7.0</title>
       <pubDate>Tue, 10 Nov 2026 21:55:18 GMT</pubDate>
       <sparkle:version>122</sparkle:version>
@@ -114,6 +124,6 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: OIcFVEif19V1U2kKyJw4NpDvJEM+0A0fz04++L0mZqtGpCdnMUfiT3XtwJN2qxEA8UWhP2R0gxMCfyFgvHzeCA==
-length: 14722
+edSignature: SwxtQ7txtth71wbM6dg3G45LWHmk8d9Fi2fO3Le7fCof7vAnJA+03KjfF2QTiVayWRGBPKRVqp0Zg5vF23+XAA==
+length: 16128
 -->
