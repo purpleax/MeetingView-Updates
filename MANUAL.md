@@ -177,6 +177,25 @@ On a day with two or more meetings, a **summary** sits under the day's heading, 
 - A quiet day shows its longest free stretch instead, measured within your [working hours](#working-hours).
 - To hide the summary, turn off Preferences → Display & Events → **Show a summary of each day**.
 
+#### Overloaded days
+
+Under the summary, an orange warning appears when a day asks too much:
+
+- **No lunch break**: there is no free half hour between 11:30 and 14:00.
+- **Back-to-back 09:00 – 13:00**: three or more meetings in a row, lasting three hours or more, without a 15-minute break.
+
+The warning also names the meeting still to come that looks most optional, and why: it's a [hold](#holds), you're an optional guest, you haven't accepted it, or ten or more people are invited. A meeting you organize is never suggested. MeetingView only suggests; it doesn't decline or change anything.
+
+If you use the [morning summary](#morning-summary), the warning is added to it. To turn warnings off, use Preferences → Display & Events → Menu → **Warn about overloaded days**.
+
+#### Holds
+
+A block that only reserves time, such as "Hold", "Placeholder for offsite" or "Keep free", is labelled **Hold** at the end of its row, so you can tell it from a real meeting.
+
+- A hold is a block with no meeting link and nobody else invited.
+- It is still listed and you are still reminded about it. The only difference is that a hold doesn't count towards an overloaded day, and is the first thing suggested when a day is overloaded anyway.
+- Blocks whose wording is less obvious ("Provisional slot for the vendor demo") are read on your Mac with Apple Intelligence, if it is turned on. Without it, only the obvious ones are labelled.
+
 - **Click a meeting** to join it.
 - **Past meetings** are greyed out.
 - **Declined meetings** are struck through.
@@ -202,6 +221,7 @@ Turn on **Display & Events → Show event: details as submenu** to add a submenu
 - **Documents**: what the invitation links to, such as Google Docs, Sheets, Slides and Drive, Notion, Figma, Confluence, Dropbox, Miro and Microsoft 365 files, and any other web page (shown by its site). Click one to open it in your browser; hover to see the full address. The meeting link itself isn't repeated here, and up to eight are listed
 - **Prep**, for a meeting with a long invitation (see [below](#meeting-prep))
 - **Copy meeting link**
+- **Call**, when the invitation has no meeting link but gives a phone number. It dials the number, then enters the passcode or PIN if the invitation gives one, using your Mac's calling app (FaceTime with your iPhone, for example). The number and code are shown in the menu item so you can check them first
 - **Join with other link**, when the invite has more than one meeting link
 - **Dismiss meeting** / **Remove dismissal** (see [Dismissing meetings](#7-dismissing-meetings))
 - **Email attendees**, which opens a new email to everyone invited
@@ -549,6 +569,8 @@ Hidden events are also ignored when MeetingView picks the next meeting, sends no
 | --- | --- |
 | Show visual timeline of the day | The timeline at the top of the menu. |
 | Show a summary of each day | The line under Today and Tomorrow that sums up the day's meetings. |
+| Warn about overloaded days | The warning for a day with no lunch break or a long run of meetings (see [Overloaded days](#overloaded-days)). On by default. |
+| Spot holds and dial-in numbers | Labels [holds](#holds) and adds the Call action for phone numbers in invitations. On by default. |
 | Show event: end time | Shows end times as well as start times. |
 | Show event: icon | Shows each meeting's service icon. |
 | Show event: calendar color | Shows each meeting's calendar colour. |
