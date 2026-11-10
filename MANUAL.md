@@ -416,7 +416,7 @@ Open Preferences from the menu (**Preferences…**, or ⌘, while the menu is op
   - **Launch after login**
   - **Language…**: opens System Settings, where you choose MeetingView's language (**General → Language & Region → Applications**). A change takes effect when MeetingView is relaunched. MeetingView 2.0 is in English; other languages will follow.
   - **Time format**: 12-hour (AM/PM) or 24-hour. Used everywhere MeetingView shows a time.
-  - **App icon**: blue (the default), green, purple, pink, yellow or graphite. Your choice appears in MeetingView's own windows, alerts and update prompts. Finder and notifications always show the blue icon.
+  - **App icon**: blue (the default), green, purple, pink, yellow or graphite. Your choice appears in MeetingView's own windows, alerts and update prompts, and on the MeetingView icon in the menu bar. Finder and notifications always show the blue icon.
 - **Updates**: see [Install and update](#updates).
 - **Keyboard Shortcuts**: see [Keyboard shortcuts](#9-keyboard-shortcuts).
 
