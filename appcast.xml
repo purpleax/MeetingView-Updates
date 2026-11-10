@@ -7,6 +7,16 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <description>Updates for MeetingView</description>
     <language>en</language>
     <item>
+      <title>Version 2.5.0</title>
+      <pubDate>Tue, 10 Nov 2026 21:22:28 GMT</pubDate>
+      <sparkle:version>120</sparkle:version>
+      <sparkle:shortVersionString>2.5.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description>&lt;h3&gt;Added&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Running late.&lt;/strong&gt; A meeting's actions now include Running late, with 5, 10 and 15 minutes. It opens an email to the organizer, or to everyone invited, with the meeting's title as the subject and your message written. Nothing is sent until you press Send. Choose who gets it and what it says in Preferences → Notifications. There is also a keyboard shortcut and a "Send Running Late Message" action for Shortcuts and Siri.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Urgency colours.&lt;/strong&gt; The menu-bar title turns orange two minutes before a meeting starts, and red for its first ten minutes if you haven't joined it from MeetingView. Change the timing or turn it off in Preferences → Display &amp;amp; Events → Status bar.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Documents.&lt;/strong&gt; A meeting's details now list the documents linked in its invitation, such as Google Docs, Notion, Figma, Confluence and Microsoft 365 files, and any other web page. Click one to open it. This needs "Show event: details as submenu" turned on.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Focus filters.&lt;/strong&gt; A macOS Focus can now choose which calendars MeetingView shows, and silence its notifications, while that Focus is on. For example, show only your work calendars during Work. Add it in System Settings → Focus → your Focus → Focus Filters → MeetingView. Your usual calendars return when the Focus ends, and the menu says when a filter is on.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Morning summary.&lt;/strong&gt; One notification each morning with the number of meetings, the time they take, the busiest stretch and when the first one starts. Off by default; turn it on and pick the time in Preferences → Notifications.&lt;/li&gt;&lt;/ul&gt;</description>
+      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v2.5.0/MeetingView-2.5.0.dmg" length="3340886" type="application/octet-stream" sparkle:edSignature="Lo2xgZlCZm5iYK1RXomVphxs2oo8avvsAO9BmKXs8Ng5kB1PdIiyhyBby7g01FxV8R07VkkhGVBbSC4Ge70GBA=="></enclosure>
+    </item>
+    <item>
       <title>Version 2.4.0</title>
       <pubDate>Tue, 10 Nov 2026 20:57:37 GMT</pubDate>
       <sparkle:version>117</sparkle:version>
@@ -80,6 +90,6 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: VDgMRy5WsOGON3aoOZ5YO/7fKbzv3xezCJKvTUODKBGGyCyJioM3XK7kVwsVMTlGggXhs4tjCR+5fbriQNygDg==
-length: 9072
+edSignature: GeUiVRvnAgXt1RHb8ZlTwPq4ym87f1vQxRDDkoZnJMl26mrOIsMaTBlApOSYdO6O5kRoXKQSIeA1M4Dz/hj7Bg==
+length: 11508
 -->
