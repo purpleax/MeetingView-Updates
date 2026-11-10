@@ -7,6 +7,18 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <description>Updates for MeetingView</description>
     <language>en</language>
     <item>
+      <title>Version 2.1.0</title>
+      <pubDate>Tue, 10 Nov 2026 10:37:44 GMT</pubDate>
+      <sparkle:version>111</sparkle:version>
+      <sparkle:shortVersionString>2.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description>&lt;h3&gt;Added&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;A new app icon, in six colours. Choose yours in Preferences → General → App icon: blue (the default), green, purple, pink, yellow or graphite. Your choice appears in MeetingView's windows, alerts and update prompts. Finder and notifications always show the blue icon.&lt;/li&gt;&lt;/ul&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;The "MeetingView" menu-bar icon matches the new app icon.&lt;/li&gt;&lt;/ul&gt;</description>
+      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v2.1.0/MeetingView-2.1.0.dmg" length="2925680" type="application/octet-stream" sparkle:edSignature="32x5LWIFOd/sJ6AYTlHDFrhb+Bav7VXvQU3B/aSOsyod1px652pyV4U7iIZmhtXr0+f4OUchNVerkdYTiSE3DA=="></enclosure>
+    </item>
+    <item>
       <title>Version 2.0.0</title>
       <pubDate>Tue, 10 Nov 2026 09:06:22 GMT</pubDate>
       <sparkle:version>110</sparkle:version>
@@ -100,6 +112,6 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: k3BThUn6lVKYew8nH+d6KMysJvJhUet7a7+5ipHgWPjlaI0Hx6NOcy0b+r0lhbGUKWR6H4yaxk/I+l6NRnnXCw==
-length: 10943
+edSignature: O3eObKO6oyY//0BkFAyMqM2kcnc5GtQUOb+7cmKgTxGQVHLTxxU+Ps/MrXJpwrJRIMnSPg5+JPCqlE7Yj7iHDQ==
+length: 12036
 -->
