@@ -21,6 +21,7 @@ MeetingView is a macOS menu-bar app that shows your current or next meeting and 
 15. [Privacy](#15-privacy)
 16. [Ask your calendar](#16-ask-your-calendar)
 17. [Focus time and working hours](#17-focus-time-and-working-hours)
+18. [Focus filters](#18-focus-filters)
 
 ---
 
@@ -114,6 +115,15 @@ Hover over the free time to see which meeting is next. If you use the two-line l
 
 To change it, open **Preferences → Display & Events → Between meetings**. To always show the next meeting instead, choose **Show the next meeting**.
 
+### Urgency colours
+
+The title in the menu bar changes colour when a meeting needs you:
+
+- **Orange** in the last two minutes before it starts.
+- **Red** for the first ten minutes after it starts, if it has a meeting link and you haven't joined it from MeetingView. Joining from MeetingView turns it back at once.
+
+VoiceOver says "starting soon" or "started" after the countdown. To change when it turns orange (1, 2, 3 or 5 minutes), or to turn the colours off, use Preferences → Display & Events → Status bar → **Colour the title when a meeting is about to start**.
+
 ### Clicks
 
 - **Click** the item to open the menu.
@@ -188,12 +198,23 @@ Turn on **Display & Events → Show event: details as submenu** to add a submenu
 
 - title, status (Accepted, Declined, Tentative or Pending), time and duration, and calendar
 - location, organizer, notes, and attendees with their responses
+- **Documents**: what the invitation links to, such as Google Docs, Sheets, Slides and Drive, Notion, Figma, Confluence, Dropbox, Miro and Microsoft 365 files, and any other web page (shown by its site). Click one to open it in your browser; hover to see the full address. The meeting link itself isn't repeated here, and up to eight are listed
 - **Copy meeting link**
 - **Join with other link**, when the invite has more than one meeting link
 - **Dismiss meeting** / **Remove dismissal** (see [Dismissing meetings](#7-dismissing-meetings))
 - **Email attendees**, which opens a new email to everyone invited
+- **Running late** (see [below](#running-late))
 - **Open in Calendar App**
 - **Open in Fantastical**, if you have it installed.
+
+#### Running late
+
+**Running late** → 5, 10 or 15 minutes opens a new email in your mail app, addressed and written: the meeting's title as the subject and your message as the text. Check it and press Send; MeetingView sends nothing itself. You'll find it in a meeting's details submenu, and under **More actions** for the current or next meeting.
+
+- **Who gets it:** the organizer, or everyone invited. If you are the organizer, it goes to everyone else.
+- **What it says:** "I'm running about 10 minutes late." unless you write your own. Put `{minutes}` where the number should go.
+- Both are set in Preferences → Notifications → **Running Late Message**.
+- The item is missing when the meeting is over or nobody else in it has an email address.
 
 ### Actions
 
@@ -290,6 +311,15 @@ Notifications are time-sensitive, so they can show through a Focus.
 
 > **Tip:** if notifications vanish before you see them, MeetingView tells you they're set to *Banners*. In **System Settings → Notifications → MeetingView**, choose **Alerts** to keep them on screen until you act on them. If notifications are turned off there, MeetingView warns you in Preferences.
 
+### Morning summary
+
+Turn on Preferences → Notifications → **Send a summary of the day's meetings** to get one notification each morning, for example "5 meetings, 2h 35m in all. Busiest 09:50 – 11:10; 3 overlap at 10:25. First: Standup at 08:00."
+
+- Pick the time (05:00 to 12:00; 08:30 unless you change it).
+- If your Mac is asleep or locked then, the summary arrives when you next unlock it, up to four hours later. After that it is skipped for the day.
+- A day with no meetings gets no summary.
+- If the menu bar hides meeting titles, the summary hides them too.
+
 ### Automatic Joining
 
 **Automatically join next event meeting** opens your next meeting's link by itself, when it starts or 1, 3 or 5 minutes before.
@@ -368,6 +398,7 @@ Set global keyboard shortcuts in **Preferences → General → Keyboard Shortcut
 | Join meeting from clipboard | Joins a meeting link you've copied. |
 | Toggle title visibility in status bar | Hides or shows the meeting title in the menu bar. |
 | Ask your calendar | Opens [Ask](#16-ask-your-calendar). |
+| Send “running late” for the next meeting | Opens the [running-late email](#running-late) for the current or next meeting, saying 5 minutes. |
 
 These work from any app.
 
@@ -387,6 +418,7 @@ Search for **MeetingView** in the Shortcuts app's action list.
 | **Get Nearest Event Details** | One detail of the nearest meeting, as text: Title, Start Date, End Date, Meeting Link, Meeting Service, Calendar, URL, Notes, Location or Attendees. |
 | **Dismiss Nearest Meeting** | Dismisses the nearest meeting. |
 | **Ask Your Calendar** | The answer to a question about your meetings or free time, as text. See [Ask your calendar](#16-ask-your-calendar). |
+| **Send Running Late Message** | Opens the [running-late email](#running-late) for your current or next meeting. Set **Minutes Late** (1–120; 5 unless you change it). |
 
 "Next meeting" means the next timed meeting that you haven't declined or dismissed, and that isn't canceled.
 
@@ -400,6 +432,8 @@ These phrases work without any setup:
 - "Get my next meeting in MeetingView"
 - "How long until my next meeting in MeetingView"
 - "When is my next meeting in MeetingView"
+- "Say I'm running late with MeetingView"
+- "Tell my meeting I'm running late with MeetingView"
 
 MeetingView's actions can also show up in Spotlight.
 
@@ -441,6 +475,7 @@ Open Preferences from the menu (**Preferences…**, or ⌘, while the menu is op
   - **Calendar permission required**
 - **Select calendars to show meetings in the menu bar**: tick the calendars to include. They're grouped by account.
 - **Unavailable selected calendars**: calendars you chose that no longer exist, for example after removing an account. Click **Remove** to clear them.
+- **Focus Filters**: how to show different calendars during a Focus, with a button that opens Focus settings (see [Focus filters](#18-focus-filters)).
 
 ### Meeting Links
 
@@ -475,6 +510,8 @@ Hidden events are also ignored when MeetingView picks the next meeting, sends no
 | Between meetings | Show the next meeting, Free for 1h 20m, or Free until 14:30 (see [Free time](#free-time)) |
 | Show only events starting within | Only show a meeting in the menu bar once it's this close (5 minutes to 12 hours). |
 | Ongoing event visibility | When to move on from a meeting in progress to the next one: hide after start, hide 10 min after start, or hide 10 min before next event |
+| Colour the title when a meeting is about to start | Orange before the start, red for ten minutes after it if you haven't joined (see [Urgency colours](#urgency-colours)). On by default. |
+| Turn orange | 1, 2, 3 or 5 minutes before the start. |
 
 **Menu**: what the menu looks like.
 
@@ -491,6 +528,11 @@ Hidden events are also ignored when MeetingView picks the next meeting, sends no
 ### Notifications
 
 See [Reminders and notifications](#6-reminders-and-notifications).
+
+| Setting | What it does |
+| --- | --- |
+| Send a summary of the day's meetings, Send it at | The [morning summary](#morning-summary) and its time. Off by default. |
+| Running Late Message: Send it to, Message | Who the [running-late email](#running-late) goes to, and its wording. |
 
 ### Planning
 
@@ -651,6 +693,25 @@ Preferences → **Planning** → Focus Blocks:
 - **Title**: what each block is called. Leave it empty for "Focus time".
 
 The calendar you choose counts as busy even if you haven't selected it to show in MeetingView, so a slot you've blocked isn't offered again.
+
+---
+
+## 18. Focus filters
+
+A macOS Focus can change what MeetingView shows while it is on. For example, show only your work calendars during Work.
+
+1. Open System Settings → Focus and choose a Focus, such as Work.
+2. Under Focus Filters, click **Add Filter** and choose **MeetingView**.
+3. Choose the **Calendars** to show during that Focus. They can be any of your calendars, including ones you don't normally show in MeetingView. Leave it empty to keep your usual calendars.
+4. Turn on **Silence Notifications** if you don't want MeetingView's meeting notifications during that Focus.
+
+While the Focus is on:
+
+- The menu bar, the menu, reminders and Ask use the calendars you chose. The menu says "Focus filter: calendars shown: 2" so you know why.
+- With notifications silenced, MeetingView sends no meeting notifications and holds back the fullscreen reminder and the morning summary. Automatic joining still works.
+- Your selection in Preferences → Calendars isn't changed, and is used again as soon as the Focus ends.
+
+Preferences → Calendars → **Focus Filters** has a button that opens Focus settings.
 
 ---
 
