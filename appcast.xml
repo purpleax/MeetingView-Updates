@@ -7,6 +7,18 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <description>Updates for MeetingView</description>
     <language>en</language>
     <item>
+      <title>Version 2.4.0</title>
+      <pubDate>Tue, 10 Nov 2026 20:57:37 GMT</pubDate>
+      <sparkle:version>117</sparkle:version>
+      <sparkle:shortVersionString>2.4.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description>&lt;h3&gt;Added&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Focus time.&lt;/strong&gt; Ask your calendar for it, for example "Find me two hours of focus time before Thursday", and MeetingView lists slots of that length that are free of meetings. Each slot has a &lt;strong&gt;Block&lt;/strong&gt; button that adds it to your calendar, and an Undo. MeetingView adds an event only when you click Block, and never changes or removes any other event.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Working hours.&lt;/strong&gt; Preferences → Planning sets the hours and days that free time and focus slots are looked for in. The default is 09:00 to 17:30, Monday to Friday.&lt;/li&gt;&lt;li&gt;Preferences → Planning also chooses the calendar focus blocks are added to, and their title.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;A summary of each day&lt;/strong&gt; under the Today and Tomorrow headers in the menu, when the day has two or more meetings: how many, how long in all, the busiest stretch and any overlaps. Turn it off in Preferences → Display &amp;amp; Events → Menu.&lt;/li&gt;&lt;li&gt;Asking what's on a day or a week now starts the answer with the same summary. For a week it names the busiest day.&lt;/li&gt;&lt;/ul&gt;
+&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;"Before Thursday", "until Friday" and "by tomorrow" in a question now mean every day up to then, not that day alone.&lt;/li&gt;&lt;li&gt;Free time now avoids every meeting in your calendars, including ones you have chosen to hide from the menu.&lt;/li&gt;&lt;/ul&gt;</description>
+      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v2.4.0/MeetingView-2.4.0.dmg" length="3243942" type="application/octet-stream" sparkle:edSignature="oe6XNaqzH92kyULPXeaPUSINi4wvWGl4uIY7qQjof6QVMDIIKQnKZudN2a9BH+y0Jx60JmuOXkwTlfcid/l9Cw=="></enclosure>
+    </item>
+    <item>
       <title>Version 2.3.0</title>
       <pubDate>Tue, 10 Nov 2026 12:03:05 GMT</pubDate>
       <sparkle:version>116</sparkle:version>
@@ -68,6 +80,6 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: JE+ArUeQNjIXSKGYNDNV69JOACnbk17ZBn5oSLJxjbMpdxLKZiq8up0yZa385ug4YsnpriYkGL48WiZYT8HuCA==
-length: 6910
+edSignature: VDgMRy5WsOGON3aoOZ5YO/7fKbzv3xezCJKvTUODKBGGyCyJioM3XK7kVwsVMTlGggXhs4tjCR+5fbriQNygDg==
+length: 9072
 -->
