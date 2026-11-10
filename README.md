@@ -25,5 +25,3 @@ What changed in each version is on the [Releases](https://github.com/purpleax/Me
 ## License
 
 MeetingView 2.0 and later is © 2026 Guy Brown, all rights reserved. It updates itself with Sparkle, used under the MIT License; both notices are included in each disk image.
-
-The older 1.x releases were published under the Apache License 2.0, and their disk images carry that licence text.
