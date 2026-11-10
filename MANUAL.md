@@ -1,6 +1,6 @@
 # MeetingView User Manual
 
-MeetingView is a macOS menu-bar app that shows your current or next meeting and joins it in one click. This manual covers MeetingView 1.2 and later.
+MeetingView is a macOS menu-bar app that shows your current or next meeting and joins it in one click. This manual covers MeetingView 2.0 and later.
 
 **Contents**
 
@@ -14,7 +14,7 @@ MeetingView is a macOS menu-bar app that shows your current or next meeting and 
 8. [Bookmarks and creating meetings](#8-bookmarks-and-creating-meetings)
 9. [Keyboard shortcuts](#9-keyboard-shortcuts)
 10. [Shortcuts and Siri](#10-shortcuts-and-siri)
-11. [Automation hooks](#11-automation-hooks)
+11. [Links to MeetingView](#11-links-to-meetingview)
 12. [Preferences reference](#12-preferences-reference)
 13. [Supported meeting services](#13-supported-meeting-services)
 14. [Troubleshooting](#14-troubleshooting)
@@ -26,8 +26,7 @@ MeetingView is a macOS menu-bar app that shows your current or next meeting and 
 
 ### Requirements
 
-- macOS 12 Monterey or later.
-- Shortcuts and Siri actions need macOS 13 Ventura or later.
+- macOS 14 Sonoma or later.
 
 ### Install
 
@@ -236,7 +235,7 @@ MeetingView looks for the meeting link in the event's:
 
 It picks the link for a known meeting service over other links, and keeps passcodes such as Zoom's `?pwd=`. If an invite has several links, the others are under **Join with other link**.
 
-For a link MeetingView doesn't recognise, add your own pattern under **Advanced → Regex Filters → Custom regexes for meeting link**.
+A link MeetingView doesn't recognise still opens in your browser when it is in the event's URL, location or notes.
 
 ### Choosing what opens a link
 
@@ -365,8 +364,6 @@ These work from any app.
 
 ## 10. Shortcuts and Siri
 
-*Requires macOS 13 Ventura or later.*
-
 ### Actions in the Shortcuts app
 
 Search for **MeetingView** in the Shortcuts app's action list.
@@ -402,101 +399,7 @@ MeetingView's actions can also show up in Spotlight.
 
 ---
 
-## 11. Automation hooks
-
-MeetingView can run something for you when a meeting starts or ends. Open **Preferences → Advanced**.
-
-### Run a Shortcut when a meeting starts or ends
-
-Under **Shortcuts**, choose a shortcut for each of:
-
-- **When a meeting starts**
-- **When a meeting ends**
-
-The pickers list the shortcuts in your Shortcuts app. Choose **Do nothing** to turn a hook off. If you add a new shortcut, click **Refresh**. **Open Shortcuts** opens the Shortcuts app.
-
-Common uses:
-
-- turn on a Focus when a meeting starts and off when it ends
-- pause music
-- mute Slack, or set your Slack status
-- switch your lights or a busy sign.
-
-#### What the shortcut receives
-
-The shortcut is given the meeting's details as a dictionary:
-
-| Key | Value |
-| --- | --- |
-| `moment` | `start` or `end` |
-| `title` | The meeting's title |
-| `start`, `end` | Start and end times, in ISO 8601 format, e.g. `2026-11-10T14:30:00Z` |
-| `calendar` | The calendar's name |
-| `meetingLink` | The meeting link, if any |
-| `meetingService` | The service, e.g. "Zoom", if any |
-| `location` | The location, if any |
-
-To use these values, start your shortcut with **Get Dictionary from Input**. Then use **Get Value for Key** for the values you need, e.g. `title` for a status message.
-
-#### When the shortcut runs
-
-The shortcut runs at the meeting's start or end time, for timed meetings.
-
-It doesn't run for:
-
-- all-day events
-- declined, canceled or dismissed meetings
-- invitations you haven't answered.
-
-More details:
-
-- **Back-to-back meetings:** the end shortcut of the first meeting runs before the start shortcut of the next.
-- **After sleep:** if your Mac was asleep, a hook still runs if it wakes within 2 minutes of the time. Otherwise it's skipped, so you don't get a burst of old hooks.
-- **Opening mid-meeting:** a hook doesn't run if MeetingView opens partway through a meeting.
-
-If a shortcut fails, the failure is recorded in MeetingView's log; your meeting isn't affected.
-
-### AppleScript hooks
-
-For automation that Shortcuts can't do, MeetingView can run AppleScript:
-
-- **Run AppleScript before events**: runs a script when the event starts, or 1, 3 or 5 minutes before. It runs for events without meeting links too.
-- **Run AppleScript when joining**: runs a script each time you join a meeting from MeetingView.
-
-To set one up:
-
-1. Click **Edit script** and write your script.
-2. Click **Save**.
-3. When asked where to save, choose the folder MeetingView suggests: `~/Library/Application Scripts/com.purpleax.MeetingView`. macOS only lets MeetingView run scripts from there.
-
-**Test on next event** runs the event script now, using your next meeting.
-
-Your script's `meetingStart` handler receives these parameters, in order:
-
-1. event identifier (text)
-2. title (text)
-3. all-day (boolean)
-4. start date (date)
-5. end date (date)
-6. location (text, or `"EMPTY"`)
-7. recurring (boolean)
-8. number of attendees (integer)
-9. meeting link (text, or `"EMPTY"`)
-10. meeting service (text, or `"EMPTY"`)
-11. notes (text, or `"EMPTY"`)
-12. calendar name (text)
-13. calendar account (text)
-14. attendees (text)
-
-For example:
-
-```applescript
-on meetingStart(eventId, title, allday, startDate, endDate, eventLocation, repeatingEvent, attendeeCount, meetingUrl, meetingService, meetingNotes, calendarName, calendarSource, attendees)
-    tell application "Music" to pause
-end meetingStart
-```
-
-### Other automation
+## 11. Links to MeetingView
 
 `meetingview://preferences` opens MeetingView's Preferences, for example from a script or a link.
 
@@ -504,14 +407,14 @@ end meetingStart
 
 ## 12. Preferences reference
 
-Open Preferences from the menu (**Preferences…**, or ⌘, while the menu is open). The sidebar has three groups: **Setup**, **Experience** and **Advanced**.
+Open Preferences from the menu (**Preferences…**, or ⌘, while the menu is open). The sidebar has two groups: **Setup** and **Experience**.
 
 ### General
 
 - **About**: version, a link to GitHub, and **Copy diagnostics**, which copies a report to attach to a bug report. Read it before sharing it.
 - **General Settings**:
   - **Launch after login**
-  - **Language**: System, or one of 16 languages
+  - **Language…**: opens System Settings, where you choose MeetingView's language (**General → Language & Region → Applications**). A change takes effect when MeetingView is relaunched. MeetingView 2.0 is in English; other languages will follow.
   - **Time format**: 12-hour (AM/PM) or 24-hour. Used everywhere MeetingView shows a time.
 - **Updates**: see [Install and update](#updates).
 - **Keyboard Shortcuts**: see [Keyboard shortcuts](#9-keyboard-shortcuts).
@@ -575,14 +478,6 @@ Hidden events are also ignored when MeetingView picks the next meeting, sends no
 
 See [Reminders and notifications](#6-reminders-and-notifications).
 
-### Advanced
-
-- **Shortcuts**: run a shortcut when a meeting starts or ends (see [Automation hooks](#run-a-shortcut-when-a-meeting-starts-or-ends)).
-- **AppleScript Hooks**: see [AppleScript hooks](#applescript-hooks).
-- **Regex Filters**:
-  - **Custom regexes to filter out meetings**: hide events whose title matches a regular expression. For example, `^Focus time` hides events named "Focus time…".
-  - **Custom regexes for meeting link**: teach MeetingView to find links it doesn't recognise. **Test meeting link regex** lets you paste sample invite text and check what matches.
-
 ---
 
 ## 13. Supported meeting services
@@ -591,7 +486,7 @@ MeetingView recognises links for more than 60 services. Its icon shows in the me
 
 8x8, Amazon Chime, Around, Blackboard Collaborate, Blizz, BlueJeans, Cal Video, Chorus, Cisco Webex, CoScreen, Demio, Demodesk, Discord, FaceTime, FaceTime Audio, Feishu, Facebook Workspace, Gather, Gong, Google Duo, Google Hangouts, Google Meet, GoToMeeting, GoToWebinar, Jam, Jitsi, Join.me, Lark, Lifesize, LiveKit Meet, Livestorm, Luma, Meetecho, Microsoft Teams, oVice, Pop, Preply, Pumble, Reclaim.ai, RingCentral, Riverside, Skype, Skype for Business, Slack (huddles), StarLeaf, StreamYard, Teamviewer Meeting, Teemyco, Tencent VooV, Tuple, Uber Conference, UserZoom, Venue, Vimeo, Vowel, VSee, Whereby, YouTube, Zhumu, Zoho Cliq, Zoom and ZoomGov. Phone numbers work too.
 
-If your service isn't listed, MeetingView can still open its link. Add a [custom regex](#advanced) if it isn't picked up.
+If your service isn't listed, MeetingView can still open its link.
 
 ---
 
@@ -607,7 +502,7 @@ If your service isn't listed, MeetingView can still open its link. Add a [custom
 
 **The menu bar shows "Free for…" but I want the meeting.** Set **Display & Events → Between meetings** to **Show the next meeting**.
 
-**A meeting link isn't detected.** Make sure the link is in the event's location, URL or notes. If it's an unusual service, add a pattern under **Advanced → Regex Filters → Custom regexes for meeting link**, and use **Test meeting link regex** to check it.
+**A meeting link isn't detected.** Make sure the link is in the event's location, URL or notes. Links for services MeetingView doesn't know open in your browser.
 
 **A link opens in the wrong app or browser.** Check **Meeting Links → Service-specific opening** for that service.
 
@@ -616,15 +511,7 @@ If your service isn't listed, MeetingView can still open its link. Add a [custom
 - Check **System Settings → Notifications → MeetingView** is on.
 - Check that a Focus isn't hiding them. MeetingView's notifications are time-sensitive; allow time-sensitive notifications in the Focus settings.
 
-**A Shortcut hook doesn't run.**
-
-- Check the shortcut runs on its own in the Shortcuts app.
-- Click **Refresh** in **Advanced → Shortcuts** if you renamed it.
-- It only runs for timed meetings, not for all-day events or meetings you've declined, dismissed or not answered.
-
-**Siri doesn't recognise the phrases.** Open MeetingView once after installing or updating, and make sure you're on macOS 13 or later. Siri can take a few minutes to learn new phrases.
-
-**An AppleScript hook fails.** Make sure the script was saved in `~/Library/Application Scripts/com.purpleax.MeetingView`, and test it with **Test on next event**. MeetingView shows the error AppleScript reports.
+**Siri doesn't recognise the phrases.** Open MeetingView once after installing or updating. Siri can take a few minutes to learn new phrases.
 
 **Check for Updates says I'm up to date, but there's a newer release.** The update feed can take a few minutes to reach everyone after a release. Try again a little later.
 
@@ -643,8 +530,7 @@ Read the diagnostics before sharing them: they can include calendar names.
 - MeetingView doesn't collect or send any personal data.
 - Your calendar data stays on your Mac. MeetingView reads it only to show your meetings and find their links.
 - The only connection MeetingView makes is the daily update check to this repository, plus the meeting links you choose to open.
-- Shortcut hooks run locally and pass the meeting's details only to the shortcut you chose.
 
 ---
 
-MeetingView is licensed under the Apache License 2.0; the license text is included in each disk image.
+MeetingView is © 2026 Guy Brown, all rights reserved. It updates itself with Sparkle, used under the MIT License; both notices are included in each disk image.
