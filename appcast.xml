@@ -7,6 +7,16 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <description>Updates for MeetingView</description>
     <language>en</language>
     <item>
+      <title>Version 2.2.0</title>
+      <pubDate>Tue, 10 Nov 2026 10:48:31 GMT</pubDate>
+      <sparkle:version>112</sparkle:version>
+      <sparkle:shortVersionString>2.2.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <description>&lt;h3&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;The MeetingView icon in the menu bar now has the colour you chose for the app icon, and changes as soon as you pick another. It appears when the menu-bar icon is set to "MeetingView" in Preferences → Display &amp;amp; Events, and whenever MeetingView shows its own icon, such as before any calendar is selected.&lt;/li&gt;&lt;/ul&gt;</description>
+      <enclosure url="https://github.com/purpleax/MeetingView-Updates/releases/download/v2.2.0/MeetingView-2.2.0.dmg" length="2926159" type="application/octet-stream" sparkle:edSignature="HXdwyx7/mrof7oWkUVwrZhd3FhRKQHlCKZ0pa9zXYR1sCImMNYGDg4IzLVI7AttHTx1dNnthM1nGrvHKqYSRCQ=="></enclosure>
+    </item>
+    <item>
       <title>Version 2.1.0</title>
       <pubDate>Tue, 10 Nov 2026 10:37:44 GMT</pubDate>
       <sparkle:version>111</sparkle:version>
@@ -36,6 +46,6 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: od/+Drpqs69OGx3ACGmmVQytU+ucphZediaJQAUln5Q+EgjKk7xzmDZ07OuieSGwE/BUivy7yIv+jRaa/jt3BQ==
-length: 3311
+edSignature: rPMdZnjby/uDjph9dd4tJ0SqPGrZaimBn/ggw8zEfLPeFNu0dtDO9ftxDB+N+90hgRnAeSEcUjbAQADCNoW+BQ==
+length: 4319
 -->
